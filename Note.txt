@@ -1,0 +1,78 @@
+when creating a variable, you also have to declare its data type else an error will occur
+
+>> this is the syntax for a for loop
+
+for (initial variable; condition; action to be performed) {
+    statement;
+}
+
+
+>> this is the syntax for a while loop
+
+initial variable;
+while (condition) {
+    action to be taken
+}
+
+if you want to create a function outside the "main", you cave to call that function 
+inside the "main" function
+
+there are three types of parameters in a function:
+>>> named parameters
+>>> required parameters 
+>>> optional parameters
+
+>> this is the syntax for a function
+void main(List<String> args) {
+    function();
+}
+
+void function() {
+    action;
+    print(action)
+}
+
+
+-------------------------------------------------------------------------
+
+
+void main(List<String> args) {
+  additionFunction(2, 2);
+  subtractionFunction(x: 2, y: 2);
+  multiplicationFunction(x: 3, y: 3);
+}
+
+
+// this is a function with optional parameters
+void additionFunction([
+    int? x, 
+    int? y
+]) {
+  int addition = x! + y!;
+  print(addition);
+}
+
+
+// this is a function with named parameters
+void subtractionFunction({
+    int? x,
+    int? y
+}) {
+  int subtraction = x! - y!;
+  print(subtraction);
+}
+
+
+// this is a function with required parameters
+void multiplicationFunction({
+  required int x,
+  required int y
+}) {
+  int multiplication = x * y;
+  print(multiplication);
+}
+
+
+-------------------------------------------------------------------------
+
+Mixins are a way to reuse methods
